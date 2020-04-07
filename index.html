@@ -3,59 +3,78 @@
 
 
 
-<h1>Visualización – AG1 </h1>
+<h1>Seminario M07  </h1>
 <br>Nombre: María Cabrera Dengra</br>
-<br>url: <a href="https://js-5v351g.stackblitz.io">https://js-5v351g.stackblitz.io</a>
 
 
-<h1>Parte 1:Datos de Wikipedia de Países con más emisiones de CO2 </h1>
-<h2> Emisiones. Gráfico circular</h2>
+<p>En este seminario vamos a analizar un set de datos de analiticias de calidad en el cultivo de la remolacha. Sobre todo es analizar la variable  <strong>SACAROSA</strong>, es la variable más importante a analizar ya que es la que se consigue obtener valor al cultivo de la remolacha.  </p>
 
-<iframe width="794.6413761638734" height="491.31558717871815" seamless frameborder="0" scrolling="no"
-	src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSb71vYXAL_y5DV6SD3-2z0ZEUGeHAh0UBSdcrQh0bCvINaNi2cRoXZyQo_GujzHBaT1Pm94LjrCLCs/pubchart?oid=105880378&amp;format=interactive"></iframe>
+<p>El fin de este análisis es poder analizar si esta variable se relaciona con parámetros espectrales, climatologiocs o morfologicos. Es por ello que al set de datos disponemos de la siguiente información: 
 
-
-<h2> Emisiones. Formato mapa</h2>
-<iframe width="695.5" height="430.05083333333334" seamless frameborder="0" scrolling="no"
-	src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSb71vYXAL_y5DV6SD3-2z0ZEUGeHAh0UBSdcrQh0bCvINaNi2cRoXZyQo_GujzHBaT1Pm94LjrCLCs/pubchart?oid=12532617&amp;format=interactive"></iframe>
-
-
-<h2> Emisiones. Formato Barras</h2>
-
-<iframe width="600" height="371" seamless frameborder="0" scrolling="no"
-	src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSb71vYXAL_y5DV6SD3-2z0ZEUGeHAh0UBSdcrQh0bCvINaNi2cRoXZyQo_GujzHBaT1Pm94LjrCLCs/pubchart?oid=971377939&amp;format=interactive"></iframe>
-
-<h1>Parte 2: Visualización de gráficos de 5 variables </h1>
-<iframe width="806.5" height="498.68583333333333" seamless frameborder="0" scrolling="no"
-	src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSb71vYXAL_y5DV6SD3-2z0ZEUGeHAh0UBSdcrQh0bCvINaNi2cRoXZyQo_GujzHBaT1Pm94LjrCLCs/pubchart?oid=150015335&amp;format=interactive"></iframe>
+<ol>
+  <li>-Valor NDVI ( Indice de vigor vegetativo obtenido con SENTINEL 2</li>
+  <li>-Temperatura Acumulada. Se ha acumulado desde la siembra hasta el momento de la muestra.</li>
+  <li>-Otros parámetros calidad: AZ, Polarizacion, peso</li>
+  <li>-Son datos dos campañas, 2018 y 2019</li>
+  <li>-Tomadas en diferentes momentos de cultivo </li>
+</ol>
 
 
-<h1>Parte 3: Wrapper </h1>
-<h2> Gráfico de barras</h2>
+<h2> Análisis de la variable: SACAROSA</h2>
 
-  <iframe title="Los pa&iacute;ses con m&aacute;s emisones" aria-label="Stacked Bars" id="datawrapper-chart-GZbSF" src="//datawrapper.dwcdn.net/GZbSF/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1589"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+<p> Primero plotearemos la variable SACAROSA con BOXPLOT </p>
+
+
+<a href="https://ibb.co/rd9FZkg"><img src="https://i.ibb.co/Vw6JvVd/Sheet-1-1.png" alt="Sheet-1-1" border="0"></a>
+
+<p> Vemos que de las 3 fábricas ( lugardes diferente de estudio) temos una tendencia diferente, siendo la zona de Toro la que destaca por mayor contenido de sacarosa.  </p>
+
+
+
+<a href="https://ibb.co/HXv4z9p"><img src="https://i.ibb.co/x3vLjr8/Sheet-1-2.png" alt="Sheet-1-2" border="0"></a>
+
+<h2> Analisis de la variable de sacarosa con temperatura</h2>
+
+<p> Es un gráfico que se ha clasificado por fábrica, se ha relacionado la temperatura acumulada desde el momento de la siembra. Además hemos dado una variable de color al contenido de NDVI ( Vigor vegetativo calculado con satélite el dia d el muestra). </p>
+
+<a href="https://ibb.co/pfPqyKy"><img src="https://i.ibb.co/ByPkN6N/Sheet-1-3.png" alt="Sheet-1-3" border="0"></a>
+
+<p> Podemos ver que los momentos con menor temperatura acumulada tenemos un alto vigor vegetativo, la planta está en pleno crecimiento, según vamos acumulando temperatura las hojas se pueden ver afectadas tanto por el calor acumulado como la edad de la hoja.  </p>
+
+<h2> Curva evolución POLARIZACIÓN</h2>
+
+<p> Este gráfico nos muestra en contenido de polarización en días puros de cultivo, la razón de analizar la curva de la polarización es porque es la parte de la muestra que se convertirá en sacarosa. </p>
+
+
+<iframe title="Evoluci&oacute;n de Polarizaci&oacute;n con d&iacute;as del cultivo" aria-label="Scatter Plot" id="datawrapper-chart-DCVGQ" src="//datawrapper.dwcdn.net/DCVGQ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
 </script>
-<h2> Gráfico de dispersion</h2>
-<iframe title="Emisiones CO2" aria-label="Scatter Plot" id="datawrapper-chart-oJCzp" src="//datawrapper.dwcdn.net/oJCzp/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="329"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+
+<h2> Estudio del PESO Neto</h2>
+
+<p> La variable de Peso neto es la que podrá decirnos el peso de la remolacha y según el conteido de polarización son dará finalmente la sacarosa. Se ha discretizado con la variable de color por fábrica para poder evaluar si existe dispersión en alguna de ellas. </p>
+
+
+<iframe title="Peso Neto " aria-label="Scatter Plot" id="datawrapper-chart-Wg2TC" src="//datawrapper.dwcdn.net/Wg2TC/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
 </script>
 
-<h1>Parte 3: Ejercicio puntuable para 10 </h1>
+<h2> Sectorización datos según tipo de suelo</h2>
 
-<h2> Gráfico barras unificado por continente</h2>
-<iframe title="Top 10 Emisiones CO2 en 2005" aria-label="Bar Chart" id="datawrapper-chart-oJCzp" src="//datawrapper.dwcdn.net/oJCzp/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="353"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+<p> Sobre todo es para ver que tipo de suelo desarrolla un crecimiento mayor de la remolacha, se puede observar que las arcillas destacan positiviamente en su crecimiento.  </p>
+
+
+<iframe title="Datos seg&uacute;n tipo de suelo" aria-label="Column Chart" id="datawrapper-chart-RwEES" src="//datawrapper.dwcdn.net/RwEES/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="500"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
 </script>
 
-<h1>AG3: Python y D3Plus </h1>
 
-<h2> Google colab</h2>
+<h2> CONCLUSIONES</h2>
 
-<a href="https://colab.research.google.com/drive/1zzB_Jib9Oo5rn3tAjL6mPlzqxLZKOnKT"> https://colab.research.google.com/drive/1zzB_Jib9Oo5rn3tAjL6mPlzqxLZKOnKT</a>
-
-<h2> Gráfico de Columnas con D3Plus</h2>
-<div id="viz1"></div>
-
-<h2> Reutilizar código. Barras</h2> 
-<div id="viz2"></div>
+<p>El objetivo de este análisis era profundicar que parámetros podrian facilitar una mayor concentración de sacarosa. Para su desarrollo se trabajado con el programa TABLEAU y DataWrapper. Los gráficos que hemos empledo han sido los siguientes:   </p>
 
 
-<h2>Caja y Bigotes o Burbujas</h2> <div id="viz3"></div>
+<ol>
+  <li>-BoxPlot con Tableau: nos ayudará a analizar si la variable de entrada tiene mucha dispersión o datos anómalos.</li>
+  <li>-Se empleó un diagrama de superficies con Tableau, para poder comprender la tipologia de suelo que encontrabamos en las muestras a analizar.</li>
+  <li>-Gráfico de dispersion con Tableau: Nos ayudó relacionar por localización las diferentes valores de sacarosa relacionada con temperatura, ayudando con el color conocer el estado de salud de la planta.</li>
+  <li>-Gráficos de dispersión con DataWraper: Nos ayudo a visualizar la curva del comportamiento de la calidad (Polarización) y el peso</li>
+  <li>-Gráfico de barras de dataWraper: Nos muestra para cada variable su distribución, lcalizando como dato importante que en los suelos arcillos encontramos un mejor condición para el desarrollo de la remolacha.  </li>
+</ol>
